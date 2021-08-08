@@ -29,7 +29,7 @@ main {
 .step {
   background-color: #ff9a4b;
   color: #fff;
-  width: fit-content;
+  padding: 3px;
   position: absolute;
   top: 0;
   left: 0;
@@ -64,4 +64,21 @@ main {
 footer {
   background-color: #aaa;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .box:nth-child(2) {
+    margin: 20px 5%;
+  }
 }
